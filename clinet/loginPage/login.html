@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./indexStyle.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-content">
+            <div class="login-content_header">
+                <img class="logo" src="../assets/images/logo.png" width="100px"/>
+                <h2>Welcome back</h2>
+            </div>
+            <div>
+                <form class="login-form">
+                    <input id="email" type="email" placeholder="Email">
+                    <input id="password" type="password" placeholder="Password">
+                    <button class="submitButton" onclick="login()" type="button">Submit</button>
+                </form>
+                <p id="error-message" class="error-message"></p>
+                <div class="login-networks">
+                    <p>Login with:</p>
+                    <div class="login-or"><hr/></div>
+                    <ul class="login-icons">
+                        <li>
+                            <box-icon color="#fff" type='logo' name='google'></box-icon> Sign in with Google
+                        </li>
+                        <li>
+                            <box-icon color="#fff" type='logo' name='facebook-circle'></box-icon> Sign in with Facebook
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        <div class="login-footer">
+            <p>Terms of use | Privacy policy</p>
+        </div>
+    </div>
+</body>
+</html>

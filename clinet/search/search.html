@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="searchStyle.css" />
+    <title>search Dr</title>
+
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="../assets/images/logo.png" alt="logo" width="150px" />
+    </div>
+
+    <div class="autocomplete">
+      <input id="searchInput" type="text" placeholder="Search therapists...">
+      <ul id="suggestionsList"></ul>
+    </div>
+
+
+    <div id="all-therapists" class="all-therapist"></div>
+  </body>
+</html>
