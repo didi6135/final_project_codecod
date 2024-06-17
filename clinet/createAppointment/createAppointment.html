@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create Appointment</title>
+    <script src="./main.js" defer></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+  </head>
+  <body>
+    <div class="header">
+      <div id="therapist" class="therapist"></div>
+
+
+    </div>
+    <div class="createAppointmentDiv">
+      <label for="appt">Appointment Time:</label>
+      <input type="time" id="appt" step="1800" />
+    </div>
+
+    <div class="tableDiv">
+      <table id="customers">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Is available</th>
+          </tr>
+        </thead>
+        <tbody id="appointments"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
