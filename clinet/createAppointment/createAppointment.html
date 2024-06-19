@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create Appointment</title>
+    <script src="./main.js" defer></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <img class="goBackButton" onclick="goBack()" src="../assets/images/go_back.svg" alt="GoBack" srcset="" width="30px">
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/e2f56137-3b1c-47c3-b569-8630cffa96f2/ucViJIJtKD.json" background="transparent" speed="1" style="width: 100px; height: 100px;" autoplay></dotlottie-player>
+        <h2>Appointment Created Successfully!</h2>
+        <p>Your appointment details are...</p>
+      </div>
+    </div>
+
+    <div class="header">
+      <div id="therapist" class="therapist">
+        
+      </div>
+
+      <div class="createAppointmentDiv">
+        <h2>Create new appointment</h2>
+        <label for="appointment-date">Appointment Date:</label>
+        <input oninput="getHour()" type="date" id="appointment-date" />
+
+        <div id="chooseHours" class="hour-buttons"></div>
+      </div>
+    </div>
+  </body>
+</html>

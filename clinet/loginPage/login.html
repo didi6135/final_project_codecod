@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./indexStyle.css" />
+</head>
+<body>
+
+
+    <div id="popupSuccess" class="popupSuccess">
+        <div class="popupSuccess-content">
+          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  
+      <dotlottie-player src="https://lottie.host/e2f56137-3b1c-47c3-b569-8630cffa96f2/ucViJIJtKD.json" background="transparent" speed="1" style="width: 100px; height: 100px;" autoplay></dotlottie-player>
+          <h2>Welcome to Central Health</h2>
+          <!-- <p>Your appointment details are...</p> -->
+        </div>
+      </div>
+
+<div class="handlePopup" id="handlePopup">
+    <!-- Registration pop-up -->
+    <div id="registration-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>Register</h2>
+            <form id="registration-form" method="post">
+                <div class="input-group">
+                    <label for="firstNameR">First Name:</label>
+                    <input type="text" id="firstNameR" name="firstNameR" minlength="6">
+                </div>
+
+                <div class="input-group">
+                    <label for="lastNameR">Last Name:</label>
+                    <input type="text" id="lastNameR" name="lastNameR" minlength="6">
+                </div>
+
+                <div class="input-group">
+                    <label for="emailR">Email Address:</label>
+                    <input type="email" id="emailR" name="emailR" minlength="6">
+                </div>
+
+                <div class="input-group">
+                    <label for="phoneNumberR">Phone number:</label>
+                    <input type="text" id="phoneNumberR" name="phoneNumberR" minlength="6">
+                </div>
+
+                <div class="input-group">
+                    <label for="passwordR">Password:</label>
+                    <input type="password" id="passwordR" name="passwordR" minlength="6">
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-passwordR">Confirm Password:</label>
+                    <input type="password" id="confirm-passwordR" name="confirm-passwordR" minlength="6">
+                </div>
+                
+            </form>
+            <div class="buttonSubmit">
+                <p id="error-message-password" class="error-message-password"></p>
+                <p id="registration-error-message" class="error-message-register"></p>
+                <button type="submit" onclick="register()" id="submit-button">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login-container">
+    <div class="login-content">
+        <div class="login-content_header">
+            <img class="logo" src="../assets/images/logo.png" width="100px" />
+            <h2>Login</h2>
+        </div>
+        <div>
+            <form class="login-form">
+                <input id="loginEmail" type="loginEmail" placeholder="Email" />
+                <input id="loginPassword" type="loginPassword" placeholder="Password" />
+                <button class="submitButton" onclick="login()" type="button">
+                    Submit
+                </button>
+            </form>
+            <p id="error-message" class="error-message"></p>
+            <div class="login-networks">
+                <p>Don't have an account? 
+                    <a id="open-popup-btn">Register:</a>
+                </p>
+                <div class="login-or"><hr /></div>
+                <ul class="login-icons">
+                    <li>
+                        <box-icon color="#fff" type="logo" name="google"></box-icon>
+                        Sign in with Google
+                    </li>
+                    <li>
+                        <box-icon color="#fff" type="logo" name="facebook-circle"></box-icon>
+                        Sign in with Facebook
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="login-footer">
+        <p>Terms of use | Privacy policy</p>
+    </div>
+</div>
+
+<script src="./main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="searchStyle.css" />
+    <title>search Dr</title>
+
+    </head>
+    <body>
+      <div id="header" class="header"> 
+        <div class="logo">
+          <img src="../assets/images/logo.png" alt="logo" width="150px" />
+        </div>
+        <div id="privateDetails" class="privateDetails"></div>
+
+
+        </div>
+      </div>
+        
+        <div class="mainContainer">
+          
+          <div class="filters">  
+            <div class="autocomplete">
+              <h3>Search by name:</h3>  
+              <input id="searchInputByName" oninput="manageSearch()" type="text" placeholder="Search therapists...">
+              </div>
+              
+              <div class="autocomplete">
+                <h3>Search by specialization:</h3>
+                <input id="searchInputBySpecialization" oninput="manageSearch()" type="text" placeholder="Search specialization...">
+                </div>
+
+                              
+              <div class="autocomplete">
+                <h3>Search by city:</h3>
+                <input id="searchInputByCity" oninput="manageSearch()" type="text" placeholder="Search specialization...">
+                </div>
+                </div>
+                <div id="all-therapists" class="all-therapist"></div>
+                </div>
+                
+                
+                </div>
+              <script src="./main.js" defer></script> 
+                </body>
+                </html>
+                
